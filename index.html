@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>El Gimnasio de Gervasio</title>
+</head>
+<body>
+    <div id="container">
+        <header>
+            <table border="1" cellpadding="5">
+                <thead>
+                    <tr bgcolor="silver">
+                        <!-- Separo la palabra invoice del número de factura porque entiendo que es interesante que el número tenga un id concreo para que se vayan generando solas las facturas con número correlativo -->
+                        <td class="titulo" colspan="3"><strong>Invoice <span id="noFactura">#123456789</span></strong></td>
+                        <td id="fecha"><strong><time datetime="2025-01-14">14 January 2025</time></strong></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td colspan="2">
+                            <div class="titulo"><strong>Pay to:</strong></div>
+                            <div class="nombre">Acme Billing Co.</div>
+                            <div class="direccion">123 Main St.</div>
+                            <div class="localidad">Cityville, NA 12345</div>
+                        </td>
+
+                        <td colspan="2"> 
+                            <div class="titulo"><strong>Customer:</strong></div>
+                            <div class="nombre">John Smith</div>
+                            <div class="direccion">321 Willow Way</div>
+                            <div class="localidad">Southeast Northwestershire, MA 54321</div>  
+                        </td>
+                    </tr>
+                    <!-- Entiendo que no es la mejor manera de poner el ancho de celda, pero es la única que me funciona como quiero -->
+                    <tr bgcolor="silver">
+                        <td class="titulo" width="25%"><strong>Name/Description</strong></td>
+                        <td class="titulo" width="25%"><strong>Qty.</strong></td>
+                        <td class="titulo" width="25%"><strong>@</strong></td>
+                        <td class="titulo" width="25%"><strong>Cost</strong></td>
+                    </tr>
+                    <tr>
+                        <td class="producto">Paperclips</td>
+                        <td class="cantidad">1000</td>
+                        <td class="precioUnidad">0.01</td>
+                        <td class="importe">10.00</td>
+                    </tr>
+                    <tr>
+                        <td class="producto">Staples(box)</td>
+                        <td class="cantidad">100</td>
+                        <td class="precioUnidad">1.00</td>
+                        <td class="importe">100.00</td>
+                    </tr>
+                    <tr>
+                        <td class="Titulo" colspan="3" bgcolor="silver"><strong>Subtotal</strong></td>
+                        <td >110.00</td>
+                    </tr>
+                    <tr>
+                        <td class="Titulo" colspan="2" bgcolor="silver"><strong>Tax</strong></td>
+                        <td>8%</td>
+                        <td>8.80</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td class="Titulo" colspan="3" bgcolor="silver"><strong>Grand Total</strong></td>
+                        <td>$118.80</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </header>
+        <footer>          
+        </footer>
+    </div>
+</body>
+</html>
